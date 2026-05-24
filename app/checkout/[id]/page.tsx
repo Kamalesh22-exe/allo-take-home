@@ -139,7 +139,7 @@ export default function CheckoutPage(props: { params: Promise<{ id: string }> })
           </div>
         )}
 
-        {(status !== "PENDING" && status !== "LOADING") && (
+        {status !== "PENDING" && (
           <button
             onClick={() => router.push("/")}
             className="w-full mt-4 py-3 px-4 bg-gray-100 border border-gray-300 text-gray-700 rounded-md font-medium hover:bg-gray-200 transition-colors"
